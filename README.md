@@ -21,23 +21,24 @@ Flutter 기반 AI 감정 관리 애플리케이션입니다.
       <img src="docs/images/main-calendar.png" width="220" alt="MindLog 메인 캘린더 화면" />      
     </td>
     <td width="65%" valign="top">
-      **주요 기능**
+      
+      주요 기능
       - 날짜별 사용자가 선택한 기분 대표 이모지 표시
       - AI가 분석한 해당 날짜의 기분 대표 이모지 표시
       - 날짜 선택 시 작성한 한줄 일기 확인
       - 날짜 길게 누를 시 AI 감정 분석 결과 화면으로 이동
 
-      **구현 내용**
+      구현 내용
       - 날짜별 사용자 선택 이모지와 AI 선택 이모지 캘린더에 함께 표시
       - 선택한 날짜에 해당하는 한 줄 일기 확인 기능 구현
       - 날짜 길게 누르기 동작을 AI 분석 결과 화면과 연결
 
-      **관련 기술**
+      관련 기술
       - Flutter, Dart
       - Firebase Authentication
       - Cloud Firestore
 
-      **핵심 구현**
+      핵심 구현
       - 캘린더 날짜와 사용자 기분 기록 및 AI 분석 결과 연결
       - 날짜 선택과 길게 누르기에 따른 서로 다른 화면 동작 구현
     </td>
@@ -52,18 +53,19 @@ Flutter 기반 AI 감정 관리 애플리케이션입니다.
       <img src="docs/images/emotion-input.jpg" width="220" alt="MindLog 감정 기록 화면" />      
     </td>
     <td width="65%" valign="top">
-      **주요 기능**
+      
+      주요 기능
       - 기쁨, 화남, 불안, 평안, 슬픔의 5가지 감정 수치 입력
 
-      **구현 내용**
+      구현 내용
       - 슬라이더를 통해 감정별 정도를 입력할 수 있도록 UI 구현
       - 입력한 감정 데이터를 기록 및 AI 분석 기능에 활용
 
-      **관련 기술**
+      관련 기술
       - Flutter, Dart
       - Cloud Firestore
 
-      **핵심 구현**
+      핵심 구현
       - 감정 입력 UI와 기록 저장 흐름 연결
       </td>
   
@@ -77,19 +79,20 @@ Flutter 기반 AI 감정 관리 애플리케이션입니다.
       <img src="docs/images/ai-analysis.png" width="220" alt="MindLog AI 감정 분석 결과 화면" />      
     </td>
     <td width="65%" valign="top">
-      **주요 기능**
+      
+      주요 기능
       - AI 기반 감정 분석 요약 제공
       - 감정 상태에 따른 케어 방법 추천
 
-      **구현 내용**
+      구현 내용
       - OpenAI GPT API 연동
       - AI 분석 결과를 앱 화면에 표시
 
-      **관련 기술**
+      관련 기술
       - Flutter, Dart
       - OpenAI GPT API
 
-      **핵심 구현**
+      핵심 구현
       - API 요청 및 응답 처리
       - 분석 결과를 사용자에게 전달하는 UI 구현
       </td>
@@ -104,19 +107,20 @@ Flutter 기반 AI 감정 관리 애플리케이션입니다.
       <img src="docs/images/emotion-statistics.png" width="220" alt="MindLog 감정 통계 화면" />      
     </td>
     <td width="65%" valign="top">
-      **주요 기능**
+      
+      주요 기능
       - 주간·월간 감정 통계 확인
       - 감정별 평균을 레이더 차트로 시각화
 
-      **구현 내용**
+      구현 내용
       - 기간별 감정 평균 계산 로직 구현
       - 계산 결과를 레이더 차트로 시각화
 
-      **관련 기술**
+      관련 기술
       - Flutter, Dart
       - fl_chart
 
-      **핵심 구현**
+      핵심 구현
       - 감정 데이터 집계
       - 'RadarChart'를 활용한 통계 시각화
       </td>
@@ -131,20 +135,21 @@ Flutter 기반 AI 감정 관리 애플리케이션입니다.
       <img src="docs/images/emotion-selection.png" width="220" alt="MindLog 감정 이모티콘 선택 화면" />      
     </td>
     <td width="65%" valign="top">
-      **주요 기능**
+      
+      주요 기능
       - 캘린더에서 날짜 선택
       - 해당 날짜의 기분을 이모티콘으로 표현
       - 오늘의 기분을 한 줄 평으로 기록
 
-      **구현 내용**
+      구현 내용
       - 캘린더에서 선택할 날짜를 기준으로 기분 기록 작성
       - 이모티콘과 한 줄 평을 입력하고 저장할 수 있는 UI 구현
 
-      **관련 기술**
+      관련 기술
       - Flutter, Dart
       - Cloud Firestore
 
-      **핵심 구현**
+      핵심 구현
       - 선택한 날짜와 기분 기록을 연결하여 저장하고 조
       </td>
   
