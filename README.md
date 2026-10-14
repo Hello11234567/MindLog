@@ -15,147 +15,156 @@ Flutter 기반 AI 감정 관리 애플리케이션입니다.
 
 ## 📱 주요 화면 및 구현
 ### 1. 메인 캘린더
-<div style="display: flex; gap: 24px; align-items: flex-start;">
-    <div style="flex:0 0 35%">
-      <img src="docs/images/main-calendar.png" width="220" alt="MindLog 메인 캘린더 화면" />      
-    </div>
-    <div style="flex: 1; min-width: 0;">
-      <h3>✨주요 기능</h3>
+<div>
+  <img src="docs/images/main-calendar.png" align="left" width="280" hspace="20" style="margin-bottom: 20px;" />
+  <div style="display: block; font-size: 14px; line-height: 1.7;">
+    <h3 style="margin-top: 0;">✨ 주요 기능</h3>
       <p>
-        - 날짜별 사용자가 선택한 기분 대표 이모지 표시<br/>
-        - AI가 분석한 해당 날짜의 기분 대표 이모지 표시<br/>
-        - 날짜 선택 시 작성한 한 줄 일기 확인<br/>
-        - 날짜를 길게 누르면 AI 감정 분석 결과 화면으로 이동
+      - 날짜별 사용자가 선택한 기분 대표 이모지 표시<br/>
+      - AI가 분석한 해당 날짜의 기분 대표 이모지 표시<br/>
+      - 날짜 선택 시 작성한 한 줄 일기 확인<br/>
+      - 날짜를 길게 누르면 AI 감정 분석 결과 화면으로 이동
       </p>
-      <h3>구현 내용</h3>
+    <h3>구현 내용</h3>
       <p>
-        - 날짜별 사용자 선택 이모지와 AI 분석 이모지를 캘린더에 함께 표시<br/>
-        - 선택한 날짜에 해당하는 한 줄 일기 확인 기능 구현<br/>
-        - 날짜 길게 누르기 동작을 AI 분석 결과 화면과 연결
+      - 날짜별 사용자 선택 이모지와 AI 분석 이모지를 캘린더에 함께 표시<br/>
+      - 선택한 날짜에 해당하는 한 줄 일기 확인 기능 구현<br/>
+      - 날짜 길게 누르기 동작을 AI 분석 결과 화면과 연결
       </p>
-      <h3>관련 기술</h3>
+    <h3>관련 기술</h3>
       <p>
-        - Flutter, Dart<br/>
-        - Firebase Authentication<br/>
-        - Cloud Firestore
+      - Flutter, Dart<br/>
+      - Firebase Authentication<br/>
+      - Cloud Firestore
       </p>
-      <h3>핵심 구현</h3>
+    <h3>핵심 구현</h3>
       <p>
         - 캘린더 날짜와 사용자 기분 기록 및 AI 분석 결과 연결<br/>
-        - 날짜 선택과 길게 누르기에 따른 서로 다른 화면 동작 구현
+        -날짜 선택과 길게 누르기에 따른 서로 다른 화면 동작 구현
       </p>
-    </div>
+  </div>
+  <br clear="left"/>
 </div>
 
+<br/>
+
 ### 2. 감정 기록
-<table>
-  <tr>
-    <td width="35%" align="left" valign="top">
-      <img src="docs/images/emotion-input.jpg" width="220" alt="MindLog 감정 기록 화면" />      
-    </td>
-    <td width="65%" valign="top">
-      
-      주요 기능
-      - 기쁨, 화남, 불안, 평안, 슬픔의 5가지 감정 수치 입력
-
-      구현 내용
-      - 슬라이더를 통해 감정별 정도를 입력할 수 있도록 UI 구현
+<div>
+  <img src="docs/images/emotion-input.jpg" align="left" width="280" hspace="20" style="margin-bottom: 20px;" />
+  <div style="display: block; font-size: 14px; line-height: 1.7;">
+    <h3 style="margin-top: 0;">✨ 주요 기능</h3>
+      <p>
+          - 기쁨, 화남, 불안, 평안, 슬픔의 5가지 감정 수치 입력
+      </p>
+    <h3>구현 내용</h3>
+      <p>
+      - 슬라이더를 통해 감정별 정도를 입력할 수 있도록 UI 구현<br/>
       - 입력한 감정 데이터를 기록 및 AI 분석 기능에 활용
-
-      관련 기술
-      - Flutter, Dart
+      </p>
+    <h3>관련 기술</h3>
+      <p>
+      - Flutter, Dart<br/>
       - Cloud Firestore
+      </p>
+    <h3>핵심 구현</h3>
+      <p>
+        - 감정 입력 UI와 기록 저장 흐름 연결
+      </p>
+  </div>
+  <br clear="left"/>
+</div>
 
-      핵심 구현
-      - 감정 입력 UI와 기록 저장 흐름 연결
-      
-      </td>
-  </tr>
-</table>
+<br/>
 
 ### 3. AI 감정 분석
-<table>
-  <tr>
-    <td width="35%" align="left" valign="top">
-      <img src="docs/images/ai-analysis.png" width="220" alt="MindLog AI 감정 분석 결과 화면" />      
-    </td>
-    <td width="65%" valign="top">
-      
-      주요 기능
-      - AI 기반 감정 분석 요약 제공
-      - 감정 상태에 따른 케어 방법 추천
-
-      구현 내용
-      - OpenAI GPT API 연동
+<div>
+  <img src="docs/images/ai-analysis.png" align="left" width="280" hspace="20" style="margin-bottom: 20px;" />
+  <div style="display: block; font-size: 14px; line-height: 1.7;">
+    <h3 style="margin-top: 0;">✨ 주요 기능</h3>
+      <p>
+          - AI 기반 감정 분석 요약 제공<br/>
+          - 감정 상태에 따른 케어 방법 추천
+      </p>
+    <h3>구현 내용</h3>
+      <p>
+      - OpenAI GPT API 연동<br/>
       - AI 분석 결과를 앱 화면에 표시
-
-      관련 기술
-      - Flutter, Dart
+      </p>
+    <h3>관련 기술</h3>
+      <p>
+      - Flutter, Dart<br/>
       - OpenAI GPT API
-
-      핵심 구현
-      - API 요청 및 응답 처리
+      </p>
+    <h3>핵심 구현</h3>
+      <p>
+      - API 요청 및 응답 처리<br/>
       - 분석 결과를 사용자에게 전달하는 UI 구현
-      
-      </td>
-  </tr>
-</table>
+      </p>
+  </div>
+  <br clear="left"/>
+</div>
+
+<br/>
 
 ### 4. 감정 통계
-<table>
-  <tr>
-    <td width="35%" align="left" valign="top">
-      <img src="docs/images/emotion-statistics.png" width="220" alt="MindLog 감정 통계 화면" />      
-    </td>
-    <td width="65%" valign="top">
-      
-      주요 기능
-      - 주간·월간 감정 통계 확인
-      - 감정별 평균을 레이더 차트로 시각화
-
-      구현 내용
-      - 기간별 감정 평균 계산 로직 구현
+<div>
+  <img src="docs/images/emotion-statistics.png" align="left" width="280" hspace="20" style="margin-bottom: 20px;" />
+  <div style="display: block; font-size: 14px; line-height: 1.7;">
+    <h3 style="margin-top: 0;">✨ 주요 기능</h3>
+      <p>
+          - 주간·월간 감정 통계 확인<br/>
+          - 감정별 평균을 레이더 차트로 시각화
+      </p>
+    <h3>구현 내용</h3>
+      <p>
+      - 기간별 감정 평균 계산 로직 구현<br/>
       - 계산 결과를 레이더 차트로 시각화
-
-      관련 기술
-      - Flutter, Dart
+      </p>
+    <h3>관련 기술</h3>
+      <p>
+      - Flutter, Dart<br/>
       - fl_chart
+      </p>
+    <h3>핵심 구현</h3>
+        <p>
+            - 감정 데이터 집계<br/>
+            - 'RadarChart'를 활용한 통계 시각화
+        </p>
+  </div>
+  <br clear="left"/>
+</div>
 
-      핵심 구현
-      - 감정 데이터 집계
-      - 'RadarChart'를 활용한 통계 시각화
-      
-      </td>
-  </tr>
-</table>
+<br/>
 
 ### 5. 감정 이모티콘 선택
-<table>
-  <tr>
-    <td width="35%" align="left" valign="top">
-      <img src="docs/images/emotion-selection.png" width="220" alt="MindLog 감정 이모티콘 선택 화면" />      
-    </td>
-    <td width="65%" valign="top">
-      
-      주요 기능
-      - 캘린더에서 날짜 선택
-      - 해당 날짜의 기분을 이모티콘으로 표현
-      - 오늘의 기분을 한 줄 평으로 기록
-
-      구현 내용
-      - 캘린더에서 선택할 날짜를 기준으로 기분 기록 작성
+<div>
+  <img src="docs/images/emotion-selection.png" align="left" width="280" hspace="20" style="margin-bottom: 20px;" />
+  <div style="display: block; font-size: 14px; line-height: 1.7;">
+    <h3 style="margin-top: 0;">✨ 주요 기능</h3>
+      <p>
+          - 캘린더에서 날짜 선택<br/>
+          - 해당 날짜의 기분을 이모티콘으로 표현<br/>
+          - 오늘의 기분을 한 줄 평으로 기록
+      </p>
+    <h3>구현 내용</h3>
+      <p>
+      - 캘린더에서 선택할 날짜를 기준으로 기분 기록 작성<br/>
       - 이모티콘과 한 줄 평을 입력하고 저장할 수 있는 UI 구현
-
-      관련 기술
-      - Flutter, Dart
+      </p>
+    <h3>관련 기술</h3>
+      <p>
+      - Flutter, Dart<br/>
       - Cloud Firestore
+      </p>
+    <h3>핵심 구현</h3>
+      <p>
+          - 선택한 날짜와 기분 기록을 연결하여 저장하고 조회
+      </p>
+  </div>
+  <br clear="left"/>
+</div>
 
-      핵심 구현
-      - 선택한 날짜와 기분 기록을 연결하여 저장하고 조회
-      
-      </td>
-  </tr>
-</table>
+<br/>
 
 ## 🛠 기술 스택
 | 구분 | 기술 |
@@ -178,5 +187,5 @@ Flutter 기반 AI 감정 관리 애플리케이션입니다.
 2025.10 ~ 2025.12 (약 3개월)
 
 ## 🔗 후속 프로젝트
-- 📱 마음이(Maeum) Flutter 앱: https://github.com/Hello11234567/Maeum
-- ⚙️ 마음이 서버: https://github.com/Hello11234567/maeum-server
+- 📱 마음이(Maeum) Flutter 앱: [마음이](https://github.com/Hello11234567/Maeum)
+- ⚙️ 마음이 서버: [서버](https://github.com/Hello11234567/maeum-server)
