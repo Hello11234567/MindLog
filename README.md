@@ -21,33 +21,25 @@ Flutter 기반 AI 감정 관리 애플리케이션입니다.
       <img src="docs/images/main-calendar.png" width="220" alt="MindLog 메인 캘린더 화면" />      
     </td>
     <td width="65%" valign="top" style="border: none;">
-      
-      <strong>주요 기능</strong>
-      <ul>
-        <li>날짜별 사용자가 선택한 기분 대표 이모지 표시</li>
-        <li>AI가 분석한 해당 날짜의 기분 대표 이모지 표시</li>
-        <li>날짜 선택 시 작성한 한줄 일기 확인</li>
-        <li>날짜를 길게 누르면 AI 감정 분석 결과 화면으로 이동</li>
-      </ul>
-      <strong>구현 내용</strong>
-      <ul>
-        <li>날짜별 사용자 선택 이모지와 AI 선택 이모지 캘린더에 함께 표시</li>
-        <li>선택한 날짜에 해당하는 한 줄 일기 확인 기능 구현</li>
-        <li>날짜 길게 누르기 동작을 AI 분석 결과 화면과 연결</li>
-      </ul>
+      주요 기능
+      - 날짜별 사용자가 선택한 기분 대표 이모지 표시
+      - AI가 분석한 해당 날짜의 기분 대표 이모지 표시
+      - 날짜 선택 시 작성한 한줄 일기 확인
+      - 날짜 길게 누를 시 AI 감정 분석 결과 화면으로 이동
 
-      <strong>관련 기술</strong>
-      <ul>
-        <li>Flutter, Dart</li>
-        <li>Firebase Authentication</li>
-        <li>Cloud Firestore</li>
-      <ul>
+      구현 내용
+      - 날짜별 사용자 선택 이모지와 AI 선택 이모지 캘린더에 함께 표시
+      - 선택한 날짜에 해당하는 한 줄 일기 확인 기능 구현
+      - 날짜 길게 누르기 동작을 AI 분석 결과 화면과 연결
 
-      <strong>핵심 구현</strong>
-      <ul>
-        <li>캘린더 날짜와 사용자 기분 기록 및 AI 분석 결과 연결</li>
-        <li>날짜 선택과 길게 누르기에 따른 서로 다른 화면 동작 구현</li>
-      <ul>
+      관련 기술
+      - Flutter, Dart
+      - Firebase Authentication
+      - Cloud Firestore
+
+      핵심 구현
+      - 캘린더 날짜와 사용자 기분 기록 및 AI 분석 결과 연결
+      - 날짜 선택과 길게 누르기에 따른 서로 다른 화면 동작 구현
       
     </td>
   </tr>
